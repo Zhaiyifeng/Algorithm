@@ -29,30 +29,25 @@ public class SpiralMatrixII {
      * @return 生成的螺旋矩阵
      */
     public static int[][] generateMatrix(int n) {
-        int[][] matrix = new int[n][n]; // 创建一个n x n的矩阵
-        int num = 1; // 初始化要填入矩阵的数字
-        //初始化上下左右
-        int left = 0; int right = n-1; int top = 0; int bottom = n-1;
-        while(left<=right && top<=bottom){
-            //从左到右 循环填充完了第一排
-            for(int i = left; i<=right; i++){
+      //二刷螺旋矩阵真麻了
+        //首先定义一个二维数组用来存放矩阵
+        int[][] matrix = new int[n][n];
+        int num = 1;
+        int left = 0, right = n - 1, top = 0, bottom = n - 1;
+        while(left <= right && top <= bottom){
+            for (int i = left; i <=right ; i++) {
                 matrix[top][i] = num++;
             }
-            //此时这个top++已经是第二排了
             top++;
-            //从上到下 循环填充完了右边最后一列
-            for(int i = top; i<=bottom; i++){
+            for(int i = top; i <= bottom; i++){
                 matrix[i][right] = num++;
             }
-            //由于right--，所以此时right已经不是最后一列了
             right--;
-            //从右到左
-            for(int i = right; i>=left; i--){
+            for(int i = right; i >= left; i--){
                 matrix[bottom][i] = num++;
             }
             bottom--;
-            //从下到上
-            for(int i = bottom; i>=top; i--){
+            for(int i = bottom; i >= top; i--){
                 matrix[i][left] = num++;
             }
             left++;
