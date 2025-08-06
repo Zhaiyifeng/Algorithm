@@ -1,32 +1,59 @@
-<<<<<<< HEAD
-# C++ 学习笔记
+# 算法学习仓库
 
-这个仓库用于存放我学习C++的代码和语法笔记。
+这是一个包含C++和Java算法实现的学习仓库。
 
-## 目录结构
+## 项目结构
 
-- `basics/` - C++基础语法
-- `oop/` - 面向对象编程
-- `stl/` - 标准模板库
-- `advanced/` - 高级特性
-- `projects/` - 练习项目
-- `notes/` - 学习笔记
-
-## 编译说明
-
-使用g++编译器：
-```bash
-g++ -std=c++17 -o output source.cpp
+```
+├── cpp/                    # C++算法实现
+│   ├── basics/            # C++基础语法
+│   ├── advanced/          # C++高级特性
+│   ├── stl/              # 标准模板库
+│   ├── projects/         # 练习项目
+│   └── notes/            # 学习笔记
+├── java/                  # Java算法实现
+│   ├── basics/           # Java基础语法
+│   ├── advanced/         # Java高级特性
+│   ├── leetcode/         # LeetCode题解
+│   ├── projects/         # 练习项目
+│   └── notes/            # 学习笔记
+└── README.md             # 项目说明
 ```
 
-## 学习进度
+## 学习目标
 
-- [ ] 基础语法
-- [ ] 面向对象
-- [ ] STL容器
-- [ ] 模板编程
-- [ ] 内存管理
-- [ ] 多线程编程
-=======
-# c-
->>>>>>> 66ce59b28addbd07e0155ef2894d3cdd2ec847ee
+- 掌握C++和Java两种编程语言
+- 理解常用数据结构和算法
+- 提高编程思维和解题能力
+- 准备技术面试和竞赛
+
+## 使用说明
+
+### C++环境配置
+- 编译器：GCC 或 Clang
+- 标准：C++11 或更高版本
+- 编译命令：`g++ -std=c++11 filename.cpp -o output`
+
+### Java环境配置
+- JDK版本：8 或更高版本
+- 编译命令：`javac ClassName.java`
+- 运行命令：`java ClassName`
+
+## 贡献指南
+
+1. Fork 本仓库
+2. 创建特性分支
+3. 提交更改
+4. 推送到分支
+5. 创建 Pull Request
+
+## 学习资源
+
+- [C++ Reference](https://cppreference.com/)
+- [Java Documentation](https://docs.oracle.com/javase/)
+- [LeetCode](https://leetcode.com/)
+- [算法导论](https://mitpress.mit.edu/books/introduction-algorithms)
+
+## 联系方式
+
+如有问题或建议，欢迎提交Issue或联系作者。
